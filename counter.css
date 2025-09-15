@@ -1,0 +1,54 @@
+.bloccocounter{
+    padding-top:80px;
+    padding-bottom:100px;
+    .wp-block-separator{
+        color: #a3cccc !important;
+        border-color: #a3cccc !important;
+        opacity: 1;
+    }
+}
+
+
+ 
+.counters {
+	background: #fff;
+	color: #373D49;
+	padding: 40px 20px;
+}
+
+.counters .container {
+	/* display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px; */
+	text-align: center;
+}
+
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+.single_counter .counter{
+    color:#F7006F;
+    font-size:110px;
+    line-height:138px;
+    letter-spacing: -.55px;
+    border-bottom:1px solid #373D49;
+    text-align:left;
+}
+
+.single_counter h3{
+    color:#373D49;
+    font-size:30px;
+    line-height:40px;
+    letter-spacing: -.15px; 
+    text-align:left;
+    font-weight:400;
+}
+
+@media screen and (max-width: 992px) {
+    .single_counter{
+        min-width:100%;
+    }
+}
