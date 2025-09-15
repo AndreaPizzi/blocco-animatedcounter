@@ -1,0 +1,26 @@
+<div id="{{ block.id }}-blocco_counter" data-delay="0s" class="fadeOnScreen container-fluid bloccocounter block_publifarm d-flex flex-column">
+{% if fields.titolo_blocco %}
+    <div class="block_header">
+        <div class="container title_divider">
+            <h3 class="wp-block-heading has-colore-tema-2-color has-text-color has-link-color" style="color:{{ fields.colore_titolo }} !important;">{{ fields.titolo_blocco }}</h3>
+            <hr class="wp-block-separator has-text-color has-colore-tema-2-color has-alpha-channel-opacity has-colore-tema-2-background-color has-background is-style-wide" style="background-color:{{ fields.colore_titolo }} !important;">
+        </div>
+    </div>
+{% endif %}
+{% if fields.counters %}
+<div class="counters">
+    <div class="container">
+        <div class="row">
+        {% set delay = 0.9 %}
+        {% for item in fields.counters %}
+            <div class="single_counter col col-sm-12 col-md-4">
+                <div class="counter" data-txtfinale="{{ item.txt_finale }}" data-target="{{ item.nr_di_arrivo }}">{{ item.nr_di_partenza }}</div>
+                <h3>{{ item.txt_singolo_counter }}</h3>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+</div>
